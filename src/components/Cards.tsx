@@ -1,22 +1,22 @@
+
+
 interface CardsProps {
       name: string;
-      description: string;
       location: string;
       rating: number;
-      price: number;
       isOpen: boolean;
+      image?: string;
+
     }
 
-function Cards({ name, description, location, rating, price, isOpen }: CardsProps   ) {
+function Cards({ name, location, rating, isOpen, image }: CardsProps   ) {
     return (
-        <div className="bg-white shadow-md rounded-lg p-4 m-4 max-w-sm text-xs">
-            <div>Image</div>
-            <div className="font-bold">{name}</div>
-            <div>{description}</div>
-            <div>{location}</div>
-            <div>⭐{rating}</div>
-            <div>{price}</div>
+        <div className="bg-white rounded-xl shadow-md overflow-hidden max-w-sm">
+            <img src={image} alt="" className="w-full h-48 object-cover" />
+            <div className="font-bold">🍜 {name}</div>
+            <div>⭐ {rating}</div>
             <div>{isOpen}</div>
+            <div>📍 {location}</div>
 
         </div>
     )

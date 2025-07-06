@@ -1,4 +1,5 @@
 import Cards from "./components/Cards";
+import Tests from "./components/Tests";
 
 export default function App() {
   return (
@@ -15,24 +16,27 @@ export default function App() {
           Pick a Restaurant
         </button>
       </div>
-      <div className="flex">
+      <div className="">
         <Cards
           name="Sate Padang"
-          description="Delicious Sate Padang with spicy peanut sauce"
           location="Jalan Raya No. 123, "
           rating={4.5}
-          price={15000}
           isOpen={true}
         />
         <Cards
           name="Nasi Goreng Kampung"
-          description="Authentic Nasi Goreng with a touch of home"
+          
           location="Jalan Kebon Jeruk No. 45,"
           rating={4.0}
-          price={12000}
           isOpen={false}
         />
       </div>
+      <div>
+
+      </div>
+      <div className=" ">
+        <Tests />
+        </div>
     </div>
   );
 }

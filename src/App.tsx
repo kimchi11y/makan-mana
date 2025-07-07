@@ -1,9 +1,8 @@
 import Cards from "./components/Cards";
-import Tests from "./components/Tests";
 
 export default function App() {
   return (
-    <div className="bg-orange-50 h-screen r">
+    <div className="bg-orange-50 min-h-screen ">
       <div className="font-bold text-center text-2xl p-3 text-neutral-700">
         Makan Mana 🍽️ ?{" "}
       </div>
@@ -16,7 +15,7 @@ export default function App() {
           Pick a Restaurant
         </button>
       </div>
-      <div className="">
+      <div className="space-y-4 mt-10 ml-2 mr-2 max-w-3xl mx-auto">
         <Cards
           name="Sate Padang"
           location="Jalan Raya No. 123, "
@@ -34,9 +33,7 @@ export default function App() {
       <div>
 
       </div>
-      <div className=" ">
-        <Tests />
-        </div>
+     
     </div>
   );
 }
